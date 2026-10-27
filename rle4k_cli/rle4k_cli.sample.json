@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "ping": {
+    "retries": 3,
+    "timeout": 15000
+  },
+  "input": {
+    "mode": "directory",
+    "path": "."
+  },
+  "send": {
+    "max_blocks": 0,
+    "mtu": 1500,
+    "delay_us": 0,
+    "loop_count": 1,
+    "verify": false,
+    "verbose": false,
+    "do_ping": true,
+    "do_reset": true
+  },
+  "v8_verify": {
+    "fpga_only": false,
+    "inter_chunk_delay_ms": 1,
+    "progress_send_pct": 10,
+    "decode_progress": true,
+    "round_budget_sec": 600,
+    "pc_spot_check": 0
+  },
+  "channels": [],
+  "active_channel": "",
+  "notes": "Copy to exe directory as rle4k_cli.json and set channels for your NIC."
+}
